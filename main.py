@@ -31,7 +31,7 @@ def check_replays(replayDir, verbose):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Check replays for validity.")
     parser.add_argument("-dir", "-d", dest="replayDir", default="./replays", help="Custom directory to check replays")
-    parser.add_argument("-v", dest="verbose", action="store_true", help="Shows valid replays as well")
+    parser.add_argument("-v", "-verbose", dest="verbose", action="store_true", help="Shows valid replays as well")
     args = parser.parse_args()
     
     check_replays(args.replayDir, args.verbose)
